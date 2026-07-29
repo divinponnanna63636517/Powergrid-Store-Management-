@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerGrid Bidadi Store Management</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>POWERGRID Bidadi Store Management</h1>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Add Product</h2>
+
+<input id="name" placeholder="Product Name">
+
+<textarea id="desc" placeholder="Description"></textarea>
+
+<input type="number" id="qty" placeholder="Quantity">
+
+<button onclick="addProduct()">Add Product</button>
+
+</div>
+
+<div class="card">
+
+<h2>Issue Material</h2>
+
+<input id="searchIssue" placeholder="Search Product">
+
+<input id="issueQty" type="number" placeholder="Issue Quantity">
+
+<input id="reason" placeholder="Reason">
+
+<button onclick="issueProduct()">Issue</button>
+
+</div>
+
+<div class="card">
+
+<h2>Search Product</h2>
+
+<input id="search" placeholder="Search by Name" onkeyup="displayProducts()">
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Product</th>
+
+<th>Description</th>
+
+<th>Available Qty</th>
+
+</tr>
+
+</thead>
+
+<tbody id="table">
+
+</tbody>
+
+</table>
+
+<h2>Issue History</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Product</th>
+
+<th>Issued Qty</th>
+
+<th>Reason</th>
+
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody id="history">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
